@@ -98,7 +98,7 @@ Output the array of results and disconnect from the vcenter server
 
 ```text
 &lt;#
-.LINK http://www.virtjunkie.com/vsphere-test-cluster-connectivity/
+.LINK /2019/10/21/vsphere-test-cluster-connectivity/
 .LINK https://github.com/jonhowe/Virtjunkie.com/blob/master/Test-ClusterNetworkConnectivity.ps1
 #>
 param(

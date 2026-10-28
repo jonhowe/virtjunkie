@@ -43,7 +43,7 @@ Below is a copy of the script:
 
 ```text
 #!/bin/bash
-#http://www.virtjunkie.com/ubuntu---mute-line-in-using-keyboard/
+#/2018/12/12/ubuntu-mute-line-in-using-keyboard/
 #https://github.com/jonhowe/Virtjunkie.com/blob/master/toggleLineIn.sh
 
 OUT=$(amixer sset Line toggle)

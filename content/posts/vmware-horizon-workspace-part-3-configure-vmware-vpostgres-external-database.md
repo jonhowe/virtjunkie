@@ -16,7 +16,7 @@ aliases:
   - "/2013/11/23/vmware-horizon-workspace-part-3-configure-vmware-vpostgres-external-database/feed/"
 ---
 
-In this post I’ll show in detail how to configure Horizon Workspace to use an external database during the install process.  This post is [part of a series](http://45.63.13.214/?p=522) showing how to [configure VMware Horizon Workspace](http://45.63.13.214/?p=522 "VMware Horizon Workspace – Part 0 – Intro") in a production environment. You’ll need an external database to have multiple service virtual appliances, so this should be a requirement for your environment.  This process was suprisingly not trivial for me, however it could have something to do with the fact that I haven’t used postgres sql in the past.
+In this post I’ll show in detail how to configure Horizon Workspace to use an external database during the install process.  This post is [part of a series](/2013/07/30/vmware-horizon-workspace-part-0-intro/) showing how to [configure VMware Horizon Workspace](/2013/07/30/vmware-horizon-workspace-part-0-intro/ "VMware Horizon Workspace – Part 0 – Intro") in a production environment. You’ll need an external database to have multiple service virtual appliances, so this should be a requirement for your environment.  This process was suprisingly not trivial for me, however it could have something to do with the fact that I haven’t used postgres sql in the past.
 
 <!--more-->
 

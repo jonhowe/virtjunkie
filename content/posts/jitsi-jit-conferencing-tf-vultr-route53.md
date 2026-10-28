@@ -129,7 +129,7 @@ This file does all of the work.
 
 ```text
 #main.tf
-#https://www.virtjunkie.com/jitsi-jit-conferencing-tf-vultr-route53/
+#/2020/05/04/jitsi-jit-conferencing-tf-vultr-route53/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/Jitsi-JIT-Conferencing-TF-Vultr-Route53
 
 #Conifugre the Vultr provider
@@ -227,7 +227,7 @@ This file defines the variables that we will use in main.tf
 
 ```text
 #variables.tf
-#https://www.virtjunkie.com/jitsi-jit-conferencing-tf-vultr-route53/
+#/2020/05/04/jitsi-jit-conferencing-tf-vultr-route53/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/Jitsi-JIT-Conferencing-TF-Vultr-Route53
 
 variable "vultr_api_key" {
@@ -310,7 +310,7 @@ Full disclosure, I did not create this script. Vultr created it, and provides it
 #This script was copied from /opt/vultr/configure_jitsi.sh on a Vultr VPS that has the one-click Jitsi App
 #I added lines 7-9 to allow for adding parameters on the CLI and commented lines 11-13 to force the variables to be provided on the CLI
 #https://www.vultr.com/docs/one-click-jitsi
-#https://www.virtjunkie.com/jitsi-jit-conferencing-tf-vultr-route53/
+#/2020/05/04/jitsi-jit-conferencing-tf-vultr-route53/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/Jitsi-JIT-Conferencing-TF-Vultr-Route53
 HOSTNAME=$1
 EMAIL=$2

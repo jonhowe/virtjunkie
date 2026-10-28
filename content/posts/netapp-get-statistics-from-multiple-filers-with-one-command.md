@@ -46,7 +46,7 @@ Below is a finished script that gathers volume information from multiple filers,
 # ========================================================================
 # Created on:	7/11/2013 9:10 PM
 # Created by:	Jon Howe
-# URL: http://45.63.13.214/?p=510
+# URL: /2013/07/11/netapp-get-statistics-from-multiple-filers-with-one-command/
 # Filename:		Get-MultipleFilerVolStats.ps1
 # ========================================================================
 

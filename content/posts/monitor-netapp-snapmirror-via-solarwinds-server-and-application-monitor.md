@@ -19,7 +19,7 @@ aliases:
   - "/2013/02/13/monitor-netapp-snapmirror-via-solarwinds-server-and-application-monitor/feed/"
 ---
 
-So [yesterday I talked about](http://45.63.13.214/?p=326 "Monitor NetApp SAN via Solarwinds Server and Application Monitor") using a Powershell script with in Solarwinds to monitor volume sizes. Using the [NetApp Data ONTAP Toolkit](http://45.63.13.214/?p=304 "Install NetApp DataOnTap Powershell"), we have the ability to do monitor a lot of different things, and track the information using Solarwinds. In this post I will show how to monitor SnapMirror relationships using Solarwinds.
+So [yesterday I talked about](/2013/02/12/monitor-netapp-san-via-solarwinds-server-and-application-monitor/ "Monitor NetApp SAN via Solarwinds Server and Application Monitor") using a Powershell script with in Solarwinds to monitor volume sizes. Using the [NetApp Data ONTAP Toolkit](/2013/02/10/install-netapp-dataontap-powershell/ "Install NetApp DataOnTap Powershell"), we have the ability to do monitor a lot of different things, and track the information using Solarwinds. In this post I will show how to monitor SnapMirror relationships using Solarwinds.
 
 <!--more-->
 

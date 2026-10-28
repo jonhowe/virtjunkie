@@ -60,7 +60,7 @@ You can find the script in the public GitHub repository I keep all of the script
 
 ```text
 &lt;#
-.LINK http://www.virtjunkie.com/powershell-parse-rvtools/
+.LINK /2019/08/11/powershell-parse-rvtools/
 .LINK https://github.com/jonhowe/Virtjunkie.com/blob/master/Parse-RVTools-Generic.ps1
 #>
 param(

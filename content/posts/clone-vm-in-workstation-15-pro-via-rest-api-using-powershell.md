@@ -30,7 +30,7 @@ This is very basic functionality, and exists simply to showcase the functionalit
 <#
 Original Links: 
 https://github.com/jonhowe/Virtjunkie.com/blob/master/clone-workstation-vm.ps1
-http://www.virtjunkie.com/clone-vm-in-workstation-15-pro-via-rest-api-using-powershell/
+/2018/11/26/clone-vm-in-workstation-15-pro-via-rest-api-using-powershell/
 The API will need to be running. Use this link to configure it.
 https://docs.vmware.com/en/VMware-Workstation-Pro/15.0/com.vmware.ws.using.doc/GUID-C3361DF5-A4C1-432E-850C-8F60D83E5E2B.html
 #>

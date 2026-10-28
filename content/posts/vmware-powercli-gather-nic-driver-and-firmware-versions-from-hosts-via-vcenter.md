@@ -108,7 +108,7 @@ Now, what if you could gather the same information for every host in attached to
 
 	.LINK
 		Original Published Location
-		http://45.63.13.214/vmware-powercli-gather-nic-driver-and-firmware-versions-from-hosts-via-vcenter
+		/2014/10/20/vmware-powercli-gather-nic-driver-and-firmware-versions-from-hosts-via-vcenter/
 	.LINK
 		VMware KB for gathering NIC Driver and Firmware versions
 		http://kb.vmware.com/kb/1027206

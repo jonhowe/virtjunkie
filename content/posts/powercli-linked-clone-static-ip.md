@@ -33,7 +33,7 @@ function New-VirtJunkieLinkedClone {
     [CmdletBinding()]
     &lt;#
     Github: https://github.com/jonhowe/Virtjunkie.com/blob/master/Deploy-VM.ps1
-    Link: https://www.virtjunkie.com/?p=774
+    Link: /2019/07/18/powercli-linked-clone-static-ip/
     #>
     param (
         #vCenter Info

@@ -26,12 +26,12 @@ Due to the reliance that the business will put on the Workspace, my definition o
 
 1. Externally Accessible
    1. One URL to rule them all, both internal and external
-2. [Load Balanced from within DMZ](http://45.63.13.214/?p=528 "VMware Horizon Workspace – Part 2 – Configure Nginx as Frontend with Microsoft CA")
+2. [Load Balanced from within DMZ](/2013/08/01/vmware-horizon-workspace-part-2-configure-nginx-as-frontend-with-microsoft-ca/ "VMware Horizon Workspace – Part 2 – Configure Nginx as Frontend with Microsoft CA")
    1. Multiple Load Balancers – no single point of failure!
 3. Multiple Virtual Appliances
    1. At LEAST 2 of every VA that comes with Workspace (Gateway, Connector, Service, Data)
-4. [External Postres SQL Database](http://45.63.13.214/?p=549 "VMware Horizon Workspace – Part 3 – Configure VMware vPostgres External Database")
-5. [Third Party SSL Certificate](http://45.63.13.214/?p=528 "VMware Horizon Workspace – Part 2 – Configure Nginx as Frontend with Microsoft CA")
+4. [External Postres SQL Database](/2013/11/23/vmware-horizon-workspace-part-3-configure-vmware-vpostgres-external-database/ "VMware Horizon Workspace – Part 3 – Configure VMware vPostgres External Database")
+5. [Third Party SSL Certificate](/2013/08/01/vmware-horizon-workspace-part-2-configure-nginx-as-frontend-with-microsoft-ca/ "VMware Horizon Workspace – Part 2 – Configure Nginx as Frontend with Microsoft CA")
    1. I used Godaddy, but if I had to do it again, I’d go with Verisign, or a more reputable CA. This should be fixed in Workspace 1.5, which should be released by the end of July.
 6. Data is stored on NFS rather than on local vmdk
 

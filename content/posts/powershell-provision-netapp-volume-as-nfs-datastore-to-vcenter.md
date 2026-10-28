@@ -32,7 +32,7 @@ For a handful of hosts this is fine, but adding it to anything more than 4-5 hos
 
 Prerequisites:
 
-[NetApp DataOnTap Toolkit](http://45.63.13.214/?p=304 "Install NetApp DataOnTap Powershell")
+[NetApp DataOnTap Toolkit](/2013/02/10/install-netapp-dataontap-powershell/ "Install NetApp DataOnTap Powershell")
 
 [VMware PowerCLI](https://my.vmware.com/web/vmware/details?downloadGroup=VSP510-PCLI-510&productId=285)
 
@@ -79,7 +79,7 @@ Enjoy! Let me know if you have any challenges or questions
 	.PARAMETER vCenter
 		The DNS or IP Address of the vCenter Server you want to provision the datastore to
 	.LINK
-		http://45.63.13.214/?p=584
+		/2014/04/29/powershell-provision-netapp-volume-as-nfs-datastore-to-vcenter/
 	.EXAMPLE
 		$ESXHosts = @("10.1.1.100","10.1.1.101","10.1.1.102")
 		Add-VolumeAndAddToESXi.ps1 -VolName Volume100 -VolSize 1.5T -filerIP 10.1.1.10 -aggrName aggr0 -ExportedHosts $ESXHosts -vCenter vcenter-site1

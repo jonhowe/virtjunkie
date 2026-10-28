@@ -121,7 +121,7 @@ Determine if the install was successful. If it failed, print out the error messa
 
 ```text
 #Github: https://github.com/jonhowe/Virtjunkie.com/tree/master/VCSA-AutoDeploy
-#Blog Post: http://www.virtjunkie.com/deploy-vcsa-via-powershell/
+#Blog Post: /2020/03/16/deploy-vcsa-via-powershell/
 
 &lt;#
 .SYNOPSIS

@@ -28,7 +28,7 @@
 
     <p>Re: #3 – You’re spot on.. I did use Linux to develop this, but it doesn’t make a difference. Just specify Windows paths to the 7-zip binary and your excel file and the rest should be fine.</p>
 
-    <p>For #1, I actually designed this to run without internet access. An example for how to do this is here: <a href="https://www.virtjunkie.com/poor-mans-autodeploy/#Web_Server" rel="nofollow ugc">https://www.virtjunkie.com/poor-mans-autodeploy/#Web_Server</a></p>
+    <p>For #1, I actually designed this to run without internet access. An example for how to do this is here: <a href="/2020/04/09/poor-mans-autodeploy/#Web_Server" rel="nofollow ugc">/2020/04/09/poor-mans-autodeploy/#Web_Server</a></p>
 
     <p>For #2, love the idea of pulling via FTP. I’d welcome a PR here: <a href="https://github.com/jonhowe/Virtjunkie.com/tree/master/VCSA-AutoDeploy" rel="nofollow ugc">https://github.com/jonhowe/Virtjunkie.com/tree/master/VCSA-AutoDeploy</a></p>'
 - id: 71
@@ -50,7 +50,7 @@
 - id: 229
   parent: 153
   author: Jon
-  author_url: https://www.virtjunkie.com/
+  author_url: https://virtjunkie.com/
   date: '2021-07-23T01:50:31-04:00'
   by_post_author: true
   html: <p>Good question Cristoph! I typically use ovftool when I deploy vCenter using ansible, but in this case, I wanted to use the tool that VMware provided, vcsa-deploy.</p>

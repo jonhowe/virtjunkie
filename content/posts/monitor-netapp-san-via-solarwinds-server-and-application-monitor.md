@@ -23,7 +23,7 @@ I was unable to find any examples for how to do this online, so I came up with m
 
 <!--more-->
 
-You’ll need to [download the toolkit and install it on your SAM machine](http://45.63.13.214/?p=304 "Install NetApp DataOnTap Powershell") as a prerequisite for this to work.
+You’ll need to [download the toolkit and install it on your SAM machine](/2013/02/10/install-netapp-dataontap-powershell/ "Install NetApp DataOnTap Powershell") as a prerequisite for this to work.
 
 Additionally, I needed to modify the powershell profile of the user that will execute the script.  The location of the Powershell profile is stored in the variable $profile.  Just make sure that file contains the line
 

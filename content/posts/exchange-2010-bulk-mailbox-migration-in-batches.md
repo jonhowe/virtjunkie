@@ -19,7 +19,7 @@ aliases:
 ---
 
 **Update**:  
-**I created a new version of this script [here](http://45.63.13.214/?p=539 "Update: Exchange 2010 – Bulk Mailbox Migration In Batches (The Right Way)")**  
+**I created a new version of this script [here](/2013/09/04/update-exchange-2010-bulk-mailbox-migration-in-batches-the-right-way/ "Update: Exchange 2010 – Bulk Mailbox Migration In Batches (The Right Way)")**  
 I recently completed a project that involved migrating Exchange 2010 Mailbox role from a standalone server to a Database Availability Group, or DAG. This was a large project that took a lot of time and planning, and had the potential to be very tedious. Fortunately, with a little knowhow, you can automate many of the tedious tasks.
 
 I wanted to be in full control of mailbox migration, so my requirements were fairly strict:

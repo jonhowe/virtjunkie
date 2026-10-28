@@ -223,8 +223,20 @@ blockquote {
   clip: rect(0 0 0 0);
 }
 
-.wp-block-columns { display: flex; flex-wrap: wrap; gap: 1rem; }
-.wp-block-column { flex: 1 1 16rem; }
+.about-row { display: flex; flex-wrap: wrap; gap: 1rem; }
+.about-row > * { flex: 1 1 16rem; }
+.about-photo, .about-links img { max-width: 100%; height: auto; }
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.about-links > li { flex: 1 1 16rem; text-align: center; }
+.about-links a { display: inline-block; }
+.about-links span { display: block; }
 
 @media (max-width: 700px) {
   .has-sidebar .site-content { grid-template-columns: minmax(0, 1fr); }

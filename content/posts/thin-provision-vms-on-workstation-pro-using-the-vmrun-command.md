@@ -74,7 +74,7 @@ You can find the script source code below and on [github](https://github.com/jon
 
 ```bash
 #Original Locations:
-#Blog: http://www.virtjunkie.com/thin-provision-vms-on-workstation-pro-using-the-vmrun-command/
+#Blog: /2018/11/27/thin-provision-vms-on-workstation-pro-using-the-vmrun-command/
 #Github: https://github.com/jonhowe/Virtjunkie.com/blob/master/workstation-clone-vm.sh
 
 #Example:

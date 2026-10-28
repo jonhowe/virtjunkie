@@ -25,8 +25,8 @@ The Open Soiurce Outlook Connector Project is a plugin for Outlook that translat
 
 More Info:
 
-- [Hula Is Shaping Up To Be Awesome](http://www.jonhoweonline.com/blog/node/31)
-- [Things I’ve Learned](http://www.jonhoweonline.com/blog/node/33)
-- [All Hope Is Lost!! – News](http://www.jonhoweonline.com/blog/node/20)
+- [Hula Is Shaping Up To Be Awesome](/2005/11/08/hula_is_shaping_up_to_be_awesome/)
+- [Things I’ve Learned](/2005/11/15/things_ive_learned/)
+- [All Hope Is Lost!! – News](/2005/10/19/all_hope_is_lost__news/)
 
 Jon Howe

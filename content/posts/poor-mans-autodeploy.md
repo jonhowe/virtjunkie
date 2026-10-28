@@ -122,7 +122,7 @@ All of stage two is executed in the newly installed ESXi OS using the firstboot 
 #    \/   |_|_|   \__\____/ \__,_|_| |_|_|\_\_|\___|
 
 #Jon Howe
-#https://www.virtjunkie.com/Poor-Mans-AutoDeploy
+#/2020/04/09/poor-mans-autodeploy/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/PoorMansAutoDeploy
 
 #  _____ _                     __            _____           _        _ _       _   _             
@@ -239,7 +239,7 @@ In this very basic example, we are doing the following based on input in the CSV
 #    \/   |_|_|   \__\____/ \__,_|_| |_|_|\_\_|\___|
                                                   
 #Jon Howe
-#https://www.virtjunkie.com/Poor-Mans-AutoDeploy
+#/2020/04/09/poor-mans-autodeploy/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/PoorMansAutoDeploy
 
 import os, csv, subprocess

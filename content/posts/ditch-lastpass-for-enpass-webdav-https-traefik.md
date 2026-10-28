@@ -116,7 +116,7 @@ Changes Required:
 #File Path
 #$HOME/docker/traefik/data/traefik.yml
 
-#http://www.virtjunkie.com/ditch-lastpass-for-enpass-webdav-https-traefik/
+#/2020/04/27/ditch-lastpass-for-enpass-webdav-https-traefik/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/DitchLastPass
 
 api:
@@ -157,7 +157,7 @@ Changes Required:
 #File Path
 #$HOME/docker/traefik/docker-compose.yml
 
-#http://www.virtjunkie.com/ditch-lastpass-for-enpass-webdav-https-traefik/
+#/2020/04/27/ditch-lastpass-for-enpass-webdav-https-traefik/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/DitchLastPass
 
 version: '3'
@@ -229,7 +229,7 @@ Changes Required:
 #File path
 #$HOME/docker/webdav/docker-compose.yml
 
-#http://www.virtjunkie.com/ditch-lastpass-for-enpass-webdav-https-traefik/
+#/2020/04/27/ditch-lastpass-for-enpass-webdav-https-traefik/
 #https://github.com/jonhowe/Virtjunkie.com/tree/master/DitchLastPass
 
 version: '3'

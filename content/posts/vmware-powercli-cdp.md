@@ -87,7 +87,7 @@ References: [VMware KB 1007069](http://kb.vmware.com/kb/1007069)
 		Results:
 		Sames as example 1
 	.LINK
-		http://45.63.13.214/vmware-powercli-cdp/
+		/2014/07/25/vmware-powercli-cdp/
 	.LINK
 		http://kb.vmware.com/kb/1007069
 #>

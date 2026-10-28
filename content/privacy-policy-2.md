@@ -4,7 +4,7 @@ title: "Privacy Policy"
 
 ## Who we are
 
-Our website address is: https://www.virtjunkie.com, owned by Jon Howe.
+Our website address is: https://virtjunkie.com, owned by Jon Howe.
 
 ## What personal data we collect and why we collect it
 

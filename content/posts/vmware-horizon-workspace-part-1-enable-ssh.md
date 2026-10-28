@@ -19,7 +19,7 @@ I’ve never met a VMware Admin who will use the console to access a VM if they 
 
 <!--more-->
 
-This post is [part of a series showing](http://45.63.13.214/?p=522 "part of a series showing") how to set up [VMware Horizon Workspace in a production](http://45.63.13.214/?p=522 "VMware Horizon Workspace in a production") environment.
+This post is [part of a series showing](/2013/07/30/vmware-horizon-workspace-part-0-intro/ "part of a series showing") how to set up [VMware Horizon Workspace in a production](/2013/07/30/vmware-horizon-workspace-part-0-intro/ "VMware Horizon Workspace in a production") environment.
 
 If copy and paste is disabled within the console (shame on you if it is…) enable it using [VMware KB1026437](http://kb.vmware.com/kb/1026437 "VMware KB1026437")
 

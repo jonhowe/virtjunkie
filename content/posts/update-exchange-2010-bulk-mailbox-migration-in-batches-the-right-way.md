@@ -14,7 +14,7 @@ aliases:
   - "/2013/09/04/update-exchange-2010-bulk-mailbox-migration-in-batches-the-right-way/feed/"
 ---
 
-In June I added a [post on how to](http://45.63.13.214/?p=483 "Exchange 2010 – Bulk Mailbox Migration In Batches") migrate exchange 2010 mailboxes to an Exchange 2010 DAG in a controlled fashion. Since then I’ve completely restructured the script and made it an all-in-one solution.
+In June I added a [post on how to](/2013/06/27/exchange-2010-bulk-mailbox-migration-in-batches/ "Exchange 2010 – Bulk Mailbox Migration In Batches") migrate exchange 2010 mailboxes to an Exchange 2010 DAG in a controlled fashion. Since then I’ve completely restructured the script and made it an all-in-one solution.
 
 <!--more-->
 
@@ -24,7 +24,7 @@ The first section of the script contains variables that need to be set.
 #region ========================================================================
 # Created on:	9/3/2013 8:01 PM
 # Created by:	Jon Howe
-# URL: http://45.63.13.214/?p=539
+# URL: /2013/09/04/update-exchange-2010-bulk-mailbox-migration-in-batches-the-right-way/
 # Filename:		Set-MailboxMoveActive-v2.ps1
 #endregion ========================================================================
 

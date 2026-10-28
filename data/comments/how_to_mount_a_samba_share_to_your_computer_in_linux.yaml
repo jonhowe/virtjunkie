@@ -14,7 +14,7 @@
 - id: 7
   parent: 0
   author: Jon Howe
-  author_url: http://www.jonhoweonline.com/
+  author_url: https://virtjunkie.com/
   date: '2007-02-18T11:22:52-05:00'
   by_post_author: false
   html: <p>Were there any errors in /var/log/syslog, or /var/log/messages when you restarted?  If so, what were they?  If not, did you create the directory that you told /etc/fstab to mount the share onto. Did you enter the credentials on the fstab line correctly? Finally, do you have the correct permissions set on the remote share, and the local share?</p>

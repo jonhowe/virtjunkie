@@ -1,8 +1,31 @@
 {{ define "main" }}
 <article class="page">
   <h1>{{ .Title }}</h1>
-  <div class="content">
-    {{ .Content }}
+  <div class="about-row">
+    <img class="about-photo" src="/wp-content/uploads/2018/12/profile1.jpg" alt="Jon Howe">
+    <div class="content">
+      {{ .Content }}
+    </div>
   </div>
+  <ul class="about-links">
+    <li>
+      <a href="https://github.com/jonhowe" rel="noopener noreferrer" target="_blank">
+        <img src="/wp-content/uploads/2018/12/9919-1-1.png" alt="">
+        <span>Github</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/jonhowe/" rel="noopener noreferrer" target="_blank">
+        <img src="/wp-content/uploads/2018/12/0-1.png" alt="">
+        <span>Linkedin</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/VirtJunkie" rel="noopener noreferrer" target="_blank">
+        <img src="/wp-content/uploads/2020/04/twitter.png" alt="">
+        <span>Twitter</span>
+      </a>
+    </li>
+  </ul>
 </article>
 {{ end }}
