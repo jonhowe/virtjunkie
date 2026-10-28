@@ -46,11 +46,10 @@ markup:
     lineNos: false
 params:
   description: Virtualization, Automation, and anything else that might be on my mind
-  # giscus reads GitHub Discussions. This repo is private, and the widget
-  # only works once the repo is public, Discussions are enabled, and the
-  # Comments category exists. categoryId is filled in after that category exists.
+  # giscus reads GitHub Discussions in the open General category.
+  # Announcements is maintainer-only, so it cannot be used here.
   giscus:
     repo: jonhowe/virtjunkie
     repoId: R_kgDOVag-GA
-    category: Comments
-    categoryId: ""
+    category: General
+    categoryId: DIC_kwDOVag-GM4DJ1V7
