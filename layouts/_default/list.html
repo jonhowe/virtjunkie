@@ -9,6 +9,9 @@
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <p class="meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time></p>
     <div class="summary">{{ .Summary }}</div>
+    {{ if .Truncated }}
+    <p class="more"><a href="{{ .RelPermalink }}">Continue reading “{{ .Title }}”</a></p>
+    {{ end }}
   </article>
   {{ end }}
 </div>

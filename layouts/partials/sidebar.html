@@ -1,0 +1,99 @@
+<aside class="widget-area" data-pagefind-ignore>
+  <section class="widget">
+    <h2 class="widget-title">About Me</h2>
+    <img class="about-photo" src="/wp-content/uploads/2020/03/Howe-11-final.jpg" alt="Jon Howe" width="144" height="216">
+  </section>
+  <section class="widget">
+    <h2 class="widget-title">Jon Howe</h2>
+    <p>Personal Blog of A Senior Solutions Architect focusing on Hybrid Cloud, Hyper Converged Infrastructure, and Automation at AHEAD. This blog is a place where I’ll share things that will be useful to other people, or just for me to jot down things I want to remember.</p>
+    <p>Opinions are my own.</p>
+  </section>
+  <section class="widget">
+    <h2 class="widget-title">vExpert 2021</h2>
+    <a href="https://vexpert.vmware.com/directory/2496"><img src="/wp-content/uploads/2021/02/vexpert-2021-300x203.png" alt="vExpert 2021" width="300" height="203"></a>
+  </section>
+  <section class="widget">
+    <h2 class="widget-title">2X VCP 2020 (DCV, CMA)</h2>
+    <a href="https://www.credly.com/badges/a9d308c6-6bb9-416d-a14f-44bde5b1bdb2"><img src="/wp-content/uploads/2020/09/double-vcp-data-center-virtualization-cloud-management-2-300x300.png" alt="2X VCP 2020" width="300" height="300"></a>
+  </section>
+  <section class="widget">
+    <h2 class="widget-title">HashiCorp Certified: Terraform Associate</h2>
+    <a href="https://www.credly.com/badges/f830e3be-5a72-44de-a0a4-a4f4a7037837"><img src="/wp-content/uploads/2020/10/hashicorp-certified-terraform-associate-300x300.png" alt="HashiCorp Certified: Terraform Associate" width="300" height="300"></a>
+  </section>
+
+  <section class="widget">
+    <h2 class="widget-title">Recent Posts</h2>
+    <ul>
+      {{ range first 5 (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h2 class="widget-title">Recent Comments</h2>
+    <ul>
+      {{ $comments := slice }}
+      {{ range $slug, $thread := site.Data.comments }}
+        {{ with site.GetPage (printf "/posts/%s" $slug) }}
+          {{ $page := . }}
+          {{ range $thread }}
+            {{ if and .author .date }}
+              {{ $comments = $comments | append (dict "date" (time .date) "author" .author "authorURL" .author_url "id" .id "title" $page.Title "url" $page.RelPermalink) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ range first 5 (sort $comments "date" "desc") }}
+      <li>
+        {{ if .authorURL }}<a href="{{ .authorURL }}">{{ .author }}</a>{{ else }}{{ .author }}{{ end }}
+        on <a href="{{ .url }}#comment-{{ .id }}">{{ .title }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h2 class="widget-title">Archives</h2>
+    <ul>
+      {{ range site.Taxonomies.month.Alphabetical.Reverse }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ (time (printf "%s-01" .Page.Title)).Format "January 2006" }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h2 class="widget-title">Categories</h2>
+    <ul>
+      {{ $terms := slice }}
+      {{ range site.Taxonomies.categories.Alphabetical }}
+        {{ $terms = $terms | append (dict "page" .Page "count" .Count "key" (lower .Page.LinkTitle)) }}
+      {{ end }}
+      {{ range sort $terms "key" }}
+      <li><a href="{{ .page.RelPermalink }}"{{ if eq .page.RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ .page.LinkTitle }}</a> <span class="count">{{ .count }}</span></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h2 class="widget-title">Tags</h2>
+    <ul>
+      {{ $terms := slice }}
+      {{ range site.Taxonomies.tags.Alphabetical }}
+        {{ $terms = $terms | append (dict "page" .Page "count" .Count "key" (lower .Page.LinkTitle)) }}
+      {{ end }}
+      {{ range sort $terms "key" }}
+      <li><a href="{{ .page.RelPermalink }}"{{ if eq .page.RelPermalink $.RelPermalink }} aria-current="page"{{ end }}>{{ .page.LinkTitle }}</a> <span class="count">{{ .count }}</span></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h2 class="widget-title">Search</h2>
+    <form class="search-form" action="/search/" method="get" role="search">
+      <label class="screen-reader" for="sidebar-q">Search</label>
+      <input id="sidebar-q" type="search" name="q" placeholder="Search">
+      <button type="submit">Search</button>
+    </form>
+  </section>
+</aside>

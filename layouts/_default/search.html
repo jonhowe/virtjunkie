@@ -7,18 +7,14 @@
 <script>
   const params = new URLSearchParams(window.location.search);
   const query = params.get("q") || "";
-  const search = new PagefindUI({ element: "#search", showSubResults: true, autofocus: true });
-  if (query) {
-    const fill = () => {
-      const input = document.querySelector("#search input");
-      if (!input) {
-        window.setTimeout(fill, 50);
-        return;
-      }
-      input.value = query;
-      input.dispatchEvent(new Event("input", { bubbles: true }));
-    };
-    fill();
+  const root = document.querySelector("#search");
+  if (typeof PagefindUI === "undefined") {
+    root.textContent = "Search is not available yet. From the Hugo repo, run scripts/index-search.sh and reload.";
+  } else {
+    const search = new PagefindUI({ element: "#search", showSubResults: true, autofocus: !query });
+    if (query && typeof search.triggerSearch === "function") {
+      search.triggerSearch(query);
+    }
   }
 </script>
 {{ end }}

@@ -8,42 +8,64 @@
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="icon" href="/wp-content/uploads/2020/04/cropped-vj4-150x150.png" sizes="32x32">
   <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="/feed/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="/css/site.css">
   {{ if eq .Layout "search" }}
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
   {{ end }}
 </head>
-<body class="kind-{{ .Kind }} layout-{{ .Layout }}"{{ if eq .Layout "search" }} data-pagefind-ignore{{ end }}>
+{{ $showSidebar := or (eq .Section "posts") (eq .Kind "term") (eq .Layout "search") }}
+<body class="kind-{{ .Kind }} layout-{{ .Layout }}{{ if $showSidebar }} has-sidebar{{ end }}"{{ if eq .Layout "search" }} data-pagefind-ignore{{ end }}>
   <a class="skip" href="#content">Skip to content</a>
   <header class="site-header" data-pagefind-ignore>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <nav class="social" aria-label="Social">
+          <a href="https://twitter.com/virtjunkie" title="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.8c-.7.3-1.5.6-2.2.7a3.9 3.9 0 0 0 1.7-2.2 7.8 7.8 0 0 1-2.5 1 3.9 3.9 0 0 0-6.6 3.5A11 11 0 0 1 3.1 4.9a3.9 3.9 0 0 0 1.2 5.2 3.8 3.8 0 0 1-1.8-.5v.1a3.9 3.9 0 0 0 3.1 3.8 3.9 3.9 0 0 1-1.8.1 3.9 3.9 0 0 0 3.6 2.7A7.8 7.8 0 0 1 2 18.4a11 11 0 0 0 6 1.8c7.2 0 11.1-6 11.1-11.1v-.5A7.7 7.7 0 0 0 22 5.8z"/></svg>
+            <span class="screen-reader">Twitter</span>
+          </a>
+          <a href="https://www.linkedin.com/in/jonhowe/" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.7 3.3A2.2 2.2 0 1 1 4.7 7.7 2.2 2.2 0 0 1 4.7 3.3zM3 9h3.4v12H3zM9.2 9h3.3v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.3V21H16.7v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21H9.2z"/></svg>
+            <span class="screen-reader">LinkedIn</span>
+          </a>
+          <a href="https://github.com/jonhowe/" title="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7 3.6 3.6 0 0 1 .1-2.6s.8-.3 2.8 1a9.6 9.6 0 0 1 5 0c2-1.3 2.8-1 2.8-1a3.6 3.6 0 0 1 .1 2.6 3.9 3.9 0 0 1 1 2.7c0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+            <span class="screen-reader">GitHub</span>
+          </a>
+        </nav>
+        <div class="topbar-right">
+          <nav class="site-nav" aria-label="Primary">
+            <a href="/posts/"{{ if eq .RelPermalink "/posts/" }} aria-current="page"{{ end }}>All Posts</a>
+            <a href="https://www.youracclaim.com/users/jon-howe">Certifications</a>
+            <a href="/privacy-policy-2/"{{ if eq .RelPermalink "/privacy-policy-2/" }} aria-current="page"{{ end }}>Privacy Policy</a>
+            <a href="https://status.virtjunkie.com/">Page Status</a>
+          </nav>
+          <form class="search-form" action="/search/" method="get" role="search">
+            <label class="screen-reader" for="q">Search</label>
+            <input id="q" type="search" name="q" placeholder="Search">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="brand">
-      <a class="site-title" href="/">{{ .Site.Title }}</a>
+      <p class="site-title"><a href="/">{{ .Site.Title }}</a></p>
       <p class="site-description">{{ .Site.Params.description }}</p>
     </div>
-    <div class="header-tools">
-      <nav class="site-nav" aria-label="Primary">
-        <a href="/posts/">All Posts</a>
-        <a href="https://www.youracclaim.com/users/jon-howe">Certifications</a>
-        <a href="/privacy-policy-2/">Privacy Policy</a>
-        <a href="https://status.virtjunkie.com/">Page Status</a>
-      </nav>
-      <form class="search-form" action="/search/" method="get" role="search">
-        <label class="screen-reader" for="q">Search</label>
-        <input id="q" type="search" name="q" placeholder="Search">
-        <button type="submit">Search</button>
-      </form>
-    </div>
   </header>
-  <main id="content"{{ if ne .Layout "search" }} data-pagefind-body{{ end }}>
-    {{ block "main" . }}{{ end }}
-  </main>
+  <div class="site-content">
+    <main id="content" class="content-area"{{ if ne .Layout "search" }} data-pagefind-body{{ end }}>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ if $showSidebar }}{{ partial "sidebar.html" . }}{{ end }}
+  </div>
   <footer class="site-footer" data-pagefind-ignore>
-    <p>Copyright VirtJunkie.com © {{ now.Format "2006" }}</p>
-    <nav aria-label="Social">
-      <a href="https://twitter.com/virtjunkie">Twitter</a>
-      <a href="https://www.linkedin.com/in/jonhowe/">LinkedIn</a>
-      <a href="https://github.com/jonhowe/">GitHub</a>
-    </nav>
+    <div class="site-footer-inner">
+      <p>Copyright VirtJunkie.com © {{ now.Format "2006" }}</p>
+    </div>
   </footer>
 </body>
 </html>

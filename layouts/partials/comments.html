@@ -1,8 +1,12 @@
+{{ $thread := index site.Data.comments .Slug }}
+{{ $giscus := site.Params.giscus.categoryId }}
+{{ if or $thread $giscus }}
 <section class="comments" id="comments">
-  {{ with index site.Data.comments .Slug }}
+  {{ with $thread }}
   <h2>Comments</h2>
   {{ partial "comment-thread.html" (dict "nodes" . "parent" 0) }}
   {{ end }}
+  {{ if $giscus }}
   <div class="new-comments" data-pagefind-ignore>
     <h2>Leave a comment</h2>
     <div class="giscus"></div>
@@ -10,7 +14,7 @@
             data-repo="{{ .Site.Params.giscus.repo }}"
             data-repo-id="{{ .Site.Params.giscus.repoId }}"
             data-category="{{ .Site.Params.giscus.category }}"
-            data-category-id="{{ .Site.Params.giscus.categoryId }}"
+            data-category-id="{{ $giscus }}"
             data-mapping="pathname"
             data-strict="1"
             data-reactions-enabled="1"
@@ -23,4 +27,6 @@
             async>
     </script>
   </div>
+  {{ end }}
 </section>
+{{ end }}
