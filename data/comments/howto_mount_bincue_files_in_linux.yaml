@@ -1,0 +1,106 @@
+- id: 8
+  parent: 0
+  author: Drakedog
+  author_url: ''
+  date: '2006-09-13T02:44:10-04:00'
+  by_post_author: false
+  html: <p>Nice! it works!</p>
+- id: 9
+  parent: 0
+  author: jo
+  author_url: ''
+  date: '2006-09-15T10:53:56-04:00'
+  by_post_author: false
+  html: '<p>liar!<br/>
+
+    but it works just great 😉</p>'
+- id: 10
+  parent: 0
+  author: Caffeine
+  author_url: http://www.coffeecore.org/
+  date: '2006-10-08T08:02:41-04:00'
+  by_post_author: false
+  html: <p>Unfortunately this does nto work with VCDs however. As the cue-file contains 2 images, one with the structure of the disc and one with the data you cant just “mount the image”. I tested merging the 2 files togetherer which didn’t work either though. Maybe its just the image though …</p>
+- id: 11
+  parent: 0
+  author: linuxfan
+  author_url: ''
+  date: '2006-10-22T03:05:57-04:00'
+  by_post_author: false
+  html: <p>you could play the bin files directly from mplayer.</p>
+- id: 12
+  parent: 0
+  author: Kyle Smith
+  author_url: ''
+  date: '2006-11-03T19:47:12-05:00'
+  by_post_author: false
+  html: '<p>I found a better solution. That is, if you can get it working. There’s a program called cdemu. It’s actually a kernel module, so you have to compile it yourself. You have to have your kernels source installed also.</p>
+
+    <p>It is worth the effort of setting up though.</p>'
+- id: 13
+  parent: 0
+  author: Kartik Thakore
+  author_url: http://kartikhacked.blogspot.com/
+  date: '2006-11-14T19:19:02-05:00'
+  by_post_author: false
+  html: <p>Thx a lot that help me tons. Hopefully I can help you. Well if you have an ati radeon card an you want to install it on ubuntu edgy. here is a script that will let you do that easy. <a href="http://kartikhacked.blogspot.com/2006/11/fglrxinstaller-update.html" rel="nofollow ugc">here!</a></p>
+- id: 14
+  parent: 0
+  author: Sean
+  author_url: ''
+  date: '2006-11-16T21:25:16-05:00'
+  by_post_author: false
+  html: '<p>procedures are slick.  I tried it on Fedora 6 and was able to do it as well.  Only difference is the option:</p>
+
+    <p>sudo apt-get install bchunk</p>
+
+    <p>is instead</p>
+
+    <p>yum install bchunk</p>
+
+    <p>All else is the same.</p>'
+- id: 15
+  parent: 0
+  author: lala
+  author_url: ''
+  date: '2006-12-17T00:58:20-05:00'
+  by_post_author: false
+  html: '<p>Thx!</p>
+
+    <p>the bhunk and .bin suggestion worked great!</p>
+
+    <p>slackware 10.1</p>'
+- id: 16
+  parent: 0
+  author: magari
+  author_url: http://www.chill-fu.net/
+  date: '2006-12-20T18:16:06-05:00'
+  by_post_author: false
+  html: "<p>in gentoo;</p>\n<p>sh4rk magari # emerge -s bchunk<br/>\nSearching…<br/>\n[ Results for search key : bchunk ]<br/>\n[ Applications found : 1 ]</p>\n<p>*  app-cdr/bchunk<br/>\n      Latest version available: 1.2.0<br/>\n      Latest version installed: [ Not Installed ]<br/>\n      Size of files: 14 kB<br/>\n      Homepage:      <a href=\"http://he.fi/bchunk/\" rel=\"nofollow ugc\">http://he.fi/bchunk/</a><br/>\n      Description:   Converts bin/cue CD-images to iso+wav/cdr<br/>\n      License:       GPL-2</p>\n<p>’emerge bchunk’ to install</p>"
+- id: 17
+  parent: 0
+  author: Martin Smith
+  author_url: http://www.maniacmartin.com/
+  date: '2006-12-31T14:00:48-05:00'
+  by_post_author: false
+  html: <p>Excellent. Worked first time in Ubuntu</p>
+- id: 18
+  parent: 0
+  author: bestial
+  author_url: ''
+  date: '2007-01-14T13:33:23-05:00'
+  by_post_author: false
+  html: <p>Had to put -r first, to get it to work, maybe it would work with -v aswell, anyway, it works! But am I the only one who get’s to .iso’s ?</p>
+- id: 19
+  parent: 0
+  author: Falx
+  author_url: ''
+  date: '2007-01-17T00:07:06-05:00'
+  by_post_author: false
+  html: '<p>Brilliant!</p>
+
+    <p>This works like a charm and I had no hitches.</p>
+
+    <p>Ubuntu Edgy Eft.</p>
+
+    <p>Thanks, Jon.</p>'

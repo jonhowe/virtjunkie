@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="page">
+  <h1>{{ .Title }}</h1>
+  <div id="search"></div>
+</article>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const query = params.get("q") || "";
+  const search = new PagefindUI({ element: "#search", showSubResults: true, autofocus: true });
+  if (query) {
+    const fill = () => {
+      const input = document.querySelector("#search input");
+      if (!input) {
+        window.setTimeout(fill, 50);
+        return;
+      }
+      input.value = query;
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    };
+    fill();
+  }
+</script>
+{{ end }}

@@ -1,0 +1,49 @@
+- id: 45
+  parent: 0
+  author: Robert Riemer
+  author_url: https://www.google.com/profiles/114651096633373235858
+  date: '2013-08-15T15:11:32-04:00'
+  by_post_author: false
+  html: '<p>Hi,</p>
+
+    <p>thank you for you great post. But i have still a question.</p>
+
+    <p>I first installed the vapp in our network just for local network use. Now we decided to configure it to get external access. </p>
+
+    <p>We use Kemp as Load Balancer in the DMZ. But if i come from WAN on workspace.**.de i get a access denied page from my horizon . Do you know what this can be?</p>
+
+    <p>Also if i will change on configurator-va on fqdn and ssl from internal to use external load balancer and save the new config it did not change. how can that be?</p>
+
+    <p>hope to hear from you soon.</p>
+
+    <p>Best Regards<br/>
+
+    Rob</p>'
+- id: 46
+  parent: 0
+  author: admin
+  author_url: ''
+  date: '2013-08-20T20:23:57-04:00'
+  by_post_author: false
+  html: '<p>Hey Rob,</p>
+
+    <p>Glad you liked the post, you can keep an eye out for more workspace posts as time goes on.</p>
+
+    <p>I have not used Kemp, so I can’t really speak to whether or not there’s an issue there.</p>
+
+    <p>I’ve got a couple of questions that might help identify the error:</p>
+
+    <p>1.) Are you using an internal or external postgres database? I’ve seen an access denied error when using an incorrectly configured external db.</p>
+
+    <p>2.) Does your Workspace FQDN point to your load balancer? </p>
+
+    <p>3.) Did you paste a cert into the field when trying to switch to the external load balancer?</p>
+
+    <p>4.) Do you get any error messages while switching to an external load balancer?</p>'
+- id: 47
+  parent: 0
+  author: ''
+  author_url: ''
+  date: ''
+  by_post_author: false
+  html: ''

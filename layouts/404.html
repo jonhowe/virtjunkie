@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="page">
+  <h1>Page not found</h1>
+  <p>That URL is not on VirtJunkie. Try <a href="/posts/">all posts</a> or search.</p>
+  <form class="search-form" action="/search/" method="get" role="search">
+    <label class="screen-reader" for="missing-q">Search</label>
+    <input id="missing-q" type="search" name="q" placeholder="Search">
+    <button type="submit">Search</button>
+  </form>
+</article>
+{{ end }}

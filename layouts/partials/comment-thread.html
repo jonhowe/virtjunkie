@@ -1,0 +1,25 @@
+{{ $nodes := .nodes }}
+{{ $parent := .parent }}
+{{ $children := where $nodes "parent" $parent }}
+{{ if $children }}
+<ol class="comment-list">
+  {{ range $children }}
+  {{ $comment := . }}
+  <li>
+    <article id="comment-{{ $comment.id }}">
+      <header class="comment-meta">
+        {{ if $comment.author_url }}
+        <a class="comment-author" href="{{ $comment.author_url }}" rel="nofollow">{{ $comment.author }}</a>
+        {{ else }}
+        <span class="comment-author">{{ $comment.author }}</span>
+        {{ end }}
+        {{ if $comment.by_post_author }}<span class="by-author">Author</span>{{ end }}
+        <time datetime="{{ $comment.date }}">{{ $comment.date }}</time>
+      </header>
+      <div class="comment-content">{{ $comment.html | safeHTML }}</div>
+    </article>
+    {{ partial "comment-thread.html" (dict "nodes" $nodes "parent" $comment.id) }}
+  </li>
+  {{ end }}
+</ol>
+{{ end }}

@@ -1,0 +1,56 @@
+- id: 68
+  parent: 0
+  author: ''
+  author_url: ''
+  date: ''
+  by_post_author: false
+  html: ''
+- id: 69
+  parent: 0
+  author: KKrishna
+  author_url: ''
+  date: '2021-06-21T20:41:45-04:00'
+  by_post_author: false
+  html: '<p>Interesting. There are few points which I would like to highlight.<br/>
+
+    1. deploying VCSA using this method where there is no internet to download.<br/>
+
+    2. Instead internet download, how about specifying alternative intranet locations such as FTP / NAS?<br/>
+
+    3. The script developed based on linux environment, Windows version would much helpful</p>'
+- id: 70
+  parent: 69
+  author: Jon Howe
+  author_url: ''
+  date: '2021-06-21T21:06:02-04:00'
+  by_post_author: true
+  html: '<p>Hey @KKrishna, thanks for stopping by. </p>
+
+    <p>Re: #3 – You’re spot on.. I did use Linux to develop this, but it doesn’t make a difference. Just specify Windows paths to the 7-zip binary and your excel file and the rest should be fine.</p>
+
+    <p>For #1, I actually designed this to run without internet access. An example for how to do this is here: <a href="https://www.virtjunkie.com/poor-mans-autodeploy/#Web_Server" rel="nofollow ugc">https://www.virtjunkie.com/poor-mans-autodeploy/#Web_Server</a></p>
+
+    <p>For #2, love the idea of pulling via FTP. I’d welcome a PR here: <a href="https://github.com/jonhowe/Virtjunkie.com/tree/master/VCSA-AutoDeploy" rel="nofollow ugc">https://github.com/jonhowe/Virtjunkie.com/tree/master/VCSA-AutoDeploy</a></p>'
+- id: 71
+  parent: 0
+  author: KKrishna
+  author_url: ''
+  date: '2021-07-04T11:23:59-04:00'
+  by_post_author: false
+  html: '<p>Thanks for your prompt response.<br/>
+
+    Unfortunately. I’m new to PS and as well Git. But I liked your approach. For me, I’m looking for script that start from place where ISO already extracted. So of now I’m trying to tailor your script.</p>'
+- id: 153
+  parent: 0
+  author: Christoph
+  author_url: ''
+  date: '2021-07-13T13:34:49-04:00'
+  by_post_author: false
+  html: <p>Hi – Great script! Nonetheless I’m pondering a bit why you don’t only extract the ova from the ISOvcsa and deploy using “ovf-tool”. Do you have any specific reason you could share?</p>
+- id: 229
+  parent: 153
+  author: Jon
+  author_url: https://www.virtjunkie.com/
+  date: '2021-07-23T01:50:31-04:00'
+  by_post_author: true
+  html: <p>Good question Cristoph! I typically use ovftool when I deploy vCenter using ansible, but in this case, I wanted to use the tool that VMware provided, vcsa-deploy.</p>

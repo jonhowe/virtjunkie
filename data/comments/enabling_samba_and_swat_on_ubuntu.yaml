@@ -1,0 +1,63 @@
+- id: 20
+  parent: 0
+  author: Wastl
+  author_url: http://www.meyersnet.de/sebastian/
+  date: '2006-09-12T06:35:02-04:00'
+  by_post_author: false
+  html: "<p>Thanks a lot, Howe.Jon!!!<br/>\nI’ve been searching the internet for a while as well as I’ve tried to get swat to work on my Ubuntu Dapper Drake system on my own. Finally, I succeeded by simply installing netkit-inetd (as you wrote in your short How To)!!! One should add this to the dependencies of swat…</p>\n<p>Again, many thanks!<br/>\nWith kind regards,<br/>\n   Wastl</p>"
+- id: 21
+  parent: 0
+  author: Roy Ferguson
+  author_url: http://none/
+  date: '2006-09-14T00:21:19-04:00'
+  by_post_author: false
+  html: '<p>Mr. Howe.</p>
+
+    <p>Thank you so much, I’ve spent days trying to resolve this issue. All the articles I’ve read just led me in different directions. I’m new to linux and like the ubuntu desktop, Your How To worked perfect.</p>
+
+    <p>Wishing you much health and happiness!<br/>
+
+    Roy</p>'
+- id: 22
+  parent: 0
+  author: chirayu patel
+  author_url: http://chirayu.net/
+  date: '2006-10-14T15:12:06-04:00'
+  by_post_author: false
+  html: '<p>Thank you for the help with swat! Got it up and running within minutes.</p>
+
+    <p>😉</p>
+
+    <p>Once again, thanks.</p>'
+- id: 23
+  parent: 0
+  author: Rai Chaves
+  author_url: http://www.ctrl-alt-delete.com/
+  date: '2006-11-13T20:40:02-05:00'
+  by_post_author: false
+  html: <p>Thaks man, I had the same problem with Kurumin Linux, and your tip solved on both OS. Perfect!! It is up and running!</p>
+- id: 24
+  parent: 0
+  author: wes
+  author_url: http://www.guerillahost.com/
+  date: '2006-12-13T13:46:52-05:00'
+  by_post_author: false
+  html: '<p>You are so UBER!!!!11</p>
+
+    <p>Seriously, thanks for the help.</p>'
+- id: 25
+  parent: 0
+  author: christiono
+  author_url: http://hendra.birumerah.com/
+  date: '2006-12-15T11:43:06-05:00'
+  by_post_author: false
+  html: '<p>thx :),</p>
+
+    <p>you help me :p.</p>'
+- id: 26
+  parent: 0
+  author: yong
+  author_url: ''
+  date: '2007-03-05T23:32:53-05:00'
+  by_post_author: false
+  html: <p>hm… mine doesn’t work at all..</p>

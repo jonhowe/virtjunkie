@@ -1,0 +1,20 @@
+- id: 6
+  parent: 0
+  author: Ali
+  author_url: ''
+  date: '2007-02-18T04:42:54-05:00'
+  by_post_author: false
+  html: '<p>It didn’t work for me.!!!!</p>
+
+    <p>The below line is working:</p>
+
+    <p>mount -t smbfs //[server ip or domain name]/[server directory] [place that you want to mount the directory] -o username=[samba username],password=[samba password]</p>
+
+    <p>But I can’t make it permanent!</p>'
+- id: 7
+  parent: 0
+  author: Jon Howe
+  author_url: http://www.jonhoweonline.com/
+  date: '2007-02-18T11:22:52-05:00'
+  by_post_author: false
+  html: <p>Were there any errors in /var/log/syslog, or /var/log/messages when you restarted?  If so, what were they?  If not, did you create the directory that you told /etc/fstab to mount the share onto. Did you enter the credentials on the fstab line correctly? Finally, do you have the correct permissions set on the remote share, and the local share?</p>

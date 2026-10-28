@@ -1,0 +1,70 @@
+- id: 261
+  parent: 0
+  author: sz
+  author_url: ''
+  date: '2021-07-27T12:38:08-04:00'
+  by_post_author: false
+  html: '<p>Hi Jon,</p>
+
+    <p>Excellent article, thanks! But since version 8.4, the Rest notification plugin is deprecated and replaced by the Webhook notification plugin, which can be configured as you wish/need.</p>
+
+    <p>You can create templates, input properties and much more. You can use the following variables OOTB :</p>
+
+    <p>${ENDPOINT_URL}<br/>
+
+    ${CREATE_TIME}<br/>
+
+    ${UPDATE_TIME}<br/>
+
+    ${CANCEL_TIME}<br/>
+
+    ${ALERT_STATUS}<br/>
+
+    ${ALERT_ID}<br/>
+
+    ${ALERT_DEFINITION}<br/>
+
+    ${ALERT_DEFINITION_DESCRIPTION}<br/>
+
+    ${ALERT_RECOMMENDATIONS}<br/>
+
+    ${RESOURCE_NAME}<br/>
+
+    ${RESOURCE_KIND}<br/>
+
+    ${RESOURCE_ID}<br/>
+
+    ${ADAPTER_KIND}<br/>
+
+    ${RESOURCE_KIND_TYPE}<br/>
+
+    ${ALERT_IMPACT}<br/>
+
+    ${CONTROL_STATE}<br/>
+
+    ${ALERT_CRITICALITY}<br/>
+
+    ${ALERT_TYPE}<br/>
+
+    ${ALERT_SUBTYPE}<br/>
+
+    ${OBJECT_HEALTH_STATE}<br/>
+
+    ${OBJECT_RISK_STATE}<br/>
+
+    ${OBJECT_EFFICIENCY_STATE}<br/>
+
+    ${SYMPTOMS}<br/>
+
+    ${ADAPTER_INSTANCE}<br/>
+
+    ${LINK_TO_ALERT}</p>
+
+    <p>Hope it helps! Cheers!</p>'
+- id: 262
+  parent: 261
+  author: Jon
+  author_url: https://www.virtjunkie.com/
+  date: '2021-07-27T12:46:10-04:00'
+  by_post_author: true
+  html: <p>Great info SZ, I just read up on 8.4 (guess I’m a little out of the loop) and it definitely looks a lot more flexible. That said, I’m personally stuck on 8.2 until we upgrade some of our internal applications, but I can’t wait until we can use this!</p>

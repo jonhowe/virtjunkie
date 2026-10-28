@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" href="/wp-content/uploads/2020/04/cropped-vj4-150x150.png" sizes="32x32">
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="/feed/">
+  <link rel="stylesheet" href="/css/site.css">
+  {{ if eq .Layout "search" }}
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+  {{ end }}
+</head>
+<body class="kind-{{ .Kind }} layout-{{ .Layout }}"{{ if eq .Layout "search" }} data-pagefind-ignore{{ end }}>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header" data-pagefind-ignore>
+    <div class="brand">
+      <a class="site-title" href="/">{{ .Site.Title }}</a>
+      <p class="site-description">{{ .Site.Params.description }}</p>
+    </div>
+    <div class="header-tools">
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/posts/">All Posts</a>
+        <a href="https://www.youracclaim.com/users/jon-howe">Certifications</a>
+        <a href="/privacy-policy-2/">Privacy Policy</a>
+        <a href="https://status.virtjunkie.com/">Page Status</a>
+      </nav>
+      <form class="search-form" action="/search/" method="get" role="search">
+        <label class="screen-reader" for="q">Search</label>
+        <input id="q" type="search" name="q" placeholder="Search">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <main id="content"{{ if ne .Layout "search" }} data-pagefind-body{{ end }}>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer" data-pagefind-ignore>
+    <p>Copyright VirtJunkie.com © {{ now.Format "2006" }}</p>
+    <nav aria-label="Social">
+      <a href="https://twitter.com/virtjunkie">Twitter</a>
+      <a href="https://www.linkedin.com/in/jonhowe/">LinkedIn</a>
+      <a href="https://github.com/jonhowe/">GitHub</a>
+    </nav>
+  </footer>
+</body>
+</html>

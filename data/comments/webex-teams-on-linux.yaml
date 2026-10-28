@@ -1,0 +1,156 @@
+- id: 54
+  parent: 0
+  author: Roberto Leinardi
+  author_url: https://plus.google.com/110804446791750062551
+  date: '2019-06-19T07:43:43-04:00'
+  by_post_author: false
+  html: '<p>Hi Jon, thanks for the post, I’m going to try it immediately because we have the same issue on my company as well.<br/>
+
+    I was checking the nativefier option and I saw the <code>--single-instance</code> one: allow only a single instance of the application. It seems a good fit for a Webex Teams client.</p>'
+- id: 55
+  parent: 0
+  author: Jeff Winget
+  author_url: https://plus.google.com/110378119637835990423
+  date: '2019-08-09T11:14:12-04:00'
+  by_post_author: false
+  html: <p>This is fantastic.  Thanks for the tip.  We just started using WebEx Teams at school, and I run Linux on my laptop.  Excellent solution.</p>
+- id: 56
+  parent: 0
+  author: Aaron Cunnington
+  author_url: https://plus.google.com/115674331358638021240
+  date: '2019-08-19T03:12:50-04:00'
+  by_post_author: false
+  html: '<p>The web version of WebEx Teams is a bit of a mess unfortunately. Meetings are often joined unsuccessfully resulting in the meeting thinking that you have joined when you haven’t. Often the web app says “Catching up…” and takes about 5 minutes to timeout and return to normal behaviour. I would estimate that 90% of the meetings I join fail on the first occasion and require the following procedure to get working again: reload the page, leave the meeting, rejoin the meeting.</p>'
+- id: 57
+  parent: 0
+  author: Hasan Hasanov
+  author_url: https://plus.google.com/114795973426421419403
+  date: '2019-09-18T16:53:52-04:00'
+  by_post_author: false
+  html: <p>Hi, thanks for solution. I just wonder, is it possible to add webex to the favorites or add shortcut to the desktop ? I tried to do that, but was not successful</p>
+- id: 58
+  parent: 0
+  author: Gianluca Tognin
+  author_url: https://plus.google.com/113233200056968771004
+  date: '2019-10-01T05:59:21-04:00'
+  by_post_author: false
+  html: '<p>Hi Jon,<br/>
+
+    thanks for this awesome solution. Everything perfect except desktop sharing.<br/>
+
+    No way to get it working.<br/>
+
+    Did you get same results?</p>
+
+    <p>Thank you again</p>'
+- id: 59
+  parent: 0
+  author: Joe Garcia
+  author_url: ''
+  date: '2019-11-21T12:57:23-05:00'
+  by_post_author: false
+  html: '<p>I get nothing but a blank white screen after building and running the nativefier package.</p>
+
+    <p>any ideas here?</p>'
+- id: 66
+  parent: 59
+  author: Jim Scully
+  author_url: https://plus.google.com/105981388108153609491
+  date: '2021-02-20T20:42:21-05:00'
+  by_post_author: false
+  html: <p>I initially had the same thing.  However, it was due to my org’s SSO.  I used the –internal-urls “.*”  option and it worked fine.</p>
+- id: 60
+  parent: 0
+  author: Régis Desgroppes
+  author_url: https://plus.google.com/112771761716126960548
+  date: '2020-05-06T13:19:18-04:00'
+  by_post_author: false
+  html: <p>Company standardized Cisco Webex Teams… I unfortunately have to share your pain.</p>
+- id: 61
+  parent: 0
+  author: Roberto Leinardi
+  author_url: https://plus.google.com/110804446791750062551
+  date: '2020-05-27T03:14:56-04:00'
+  by_post_author: false
+  html: '<p>I’m in the same situation, the problem is that the current web version of WebEx Teams does not provide the same features as the Mac and Windows native clients!</p>
+
+    <p>You cannot edit your messages, you cannot add or even view reactions and most of the time the chat history goes crazy and you don’t see new messages anymore.</p>
+
+    <p>And yes, I know that there is a long running beta version that fixes some of these issues, but the beta version doesn’t allow to make or join audio/video calls! And, in these quarantine days, being able to join call conferences is a must.</p>
+
+    <p>Please consider voting on the official Cisco User Community Feedback the entry for a native Linux client:<br/>
+
+    <a href="https://ciscocollabcustomer.ideas.aha.io/ideas/WXCUST-I-61" rel="nofollow ugc">https://ciscocollabcustomer.ideas.aha.io/ideas/WXCUST-I-61</a></p>'
+- id: 62
+  parent: 0
+  author: Ben V.
+  author_url: ''
+  date: '2020-11-02T03:24:04-05:00'
+  by_post_author: false
+  html: '<p>Perfect, it’s run for me on linux 20.04<br/>
+
+    Thank you</p>'
+- id: 63
+  parent: 0
+  author: Joe Black
+  author_url: http://joeblack.com/
+  date: '2020-11-20T08:41:19-05:00'
+  by_post_author: false
+  html: '<p>It’s working like a charm. </p>
+
+    <p>Pros:<br/>
+
+    It’s working like native desktop app for availability. Now my avail. status is online while the app is running on the background. Web version doesn’t provide this.</p>
+
+    <p>Cons:<br/>
+
+    I didn’t see yet but not tested so much.</p>'
+- id: 64
+  parent: 0
+  author: Jerome Ryan
+  author_url: http://NA/
+  date: '2020-12-31T16:18:16-05:00'
+  by_post_author: false
+  html: '<p>I ran the command below:</p>
+
+    <p>$ nativefier -n “Webex-Teams” -p linux -a x64 -e 11.0.3 -i Pictures/cisco-webex-teams.png –tray <a href="https://teams.webex.com/" rel="nofollow ugc">https://teams.webex.com</a></p>
+
+    <p>Preparing Electron app…</p>
+
+    <p>Converting icons…</p>
+
+    <p>Packaging… This will take a few seconds, maybe minutes if the requested Electron isn’t cached yet…<br/>
+
+    Downloading electron-v11.0.3-linux-x64.zip: [====================================================================================================] 100% ETA: 0.0 seconds<br/>
+
+    Packaging app for platform linux x64 using electron v11.0.3</p>
+
+    <p>Finalizing build…<br/>
+
+    App built to /home/jr/Webex-Teams-linux-x64 , move it wherever it makes sense for you and run the contained executable file (prefixing with ./ if necessary)<br/>
+
+    Menu/desktop shortcuts are up to you, because Nativefier cannot know where you’re going to move the app. Search for “linux .desktop file” for help, or see <a href="https://wiki.archlinux.org/index.php/Desktop_entries" rel="nofollow ugc">https://wiki.archlinux.org/index.php/Desktop_entries</a></p>
+
+    <p>This created a valid directory and everything looks good. My problem is I don’t recognize any executable file as the above instructions?</p>'
+- id: 65
+  parent: 0
+  author: beanrod
+  author_url: ''
+  date: '2021-01-07T23:46:12-05:00'
+  by_post_author: false
+  html: '<p>nativefier –name ‘Webex’ ‘https://web.webex.com’ –internal-urls “.*(okta|cisco|spark|webex)\.(com|net).*” –single-instance</p>
+
+    <p>heres my version of it allowing for okta 2fa. hoping it ends up in a search engine and helps someone 🙂</p>'
+- id: 67
+  parent: 65
+  author: Vincent
+  author_url: ''
+  date: '2021-05-07T08:36:29-04:00'
+  by_post_author: false
+  html: '<p>Unfortunately, the forum ‘improves’ your pasted command line 🙂 Let me try if this can be prevented:</p>
+
+    <p><code></code><code>shell<br/>
+
+    nativefier --name Webex https://web.webex.com --internal-urls ".*(okta|cisco|spark|webex).(com|net).*" --single-instance<br/>
+
+    </code><code></code></p>'

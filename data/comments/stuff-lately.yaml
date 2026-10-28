@@ -1,0 +1,16 @@
+- id: 32
+  parent: 0
+  author: This Friend You Speak Of
+  author_url: http://joshsnellink.is-a-geek.com/
+  date: '2006-10-30T14:34:04-05:00'
+  by_post_author: false
+  html: '<p>oo.  sounds like fun times :D.</p>
+
+    <p>(do you gotta have a 3rd drive around to keep /boot off the raid then?)</p>'
+- id: 33
+  parent: 0
+  author: admin
+  author_url: http://www.jonhoweonline.com/
+  date: '2006-10-30T16:59:36-05:00'
+  by_post_author: false
+  html: <p>Nope, as far as I can tell you just put the /boot partition aside from the rest of the array.</p>

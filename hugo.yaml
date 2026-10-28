@@ -1,0 +1,56 @@
+baseURL: https://www.virtjunkie.com/
+languageCode: en-us
+title: VirtJunkie
+timeZone: America/New_York
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+taxonomies:
+  category: categories
+  tag: tags
+  author: author
+  year: year
+  month: month
+permalinks:
+  posts: /:year/:month/:day/:slug/
+pagination:
+  pagerSize: 10
+  path: page
+  disableAliases: true
+outputs:
+  home:
+    - HTML
+    - RSS
+  page:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+  term:
+    - HTML
+outputFormats:
+  RSS:
+    mediaType: application/rss+xml
+    baseName: index
+    path: feed
+markup:
+  goldmark:
+    extensions:
+      typographer: false
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: true
+    style: monokai
+    lineNos: false
+params:
+  description: Virtualization, Automation, and anything else that might be on my mind
+  # giscus reads GitHub Discussions. This repo is private, and the widget
+  # only works once the repo is public, Discussions are enabled, and the
+  # Comments category exists. categoryId is filled in after that category exists.
+  giscus:
+    repo: jonhowe/virtjunkie
+    repoId: R_kgDOVag-GA
+    category: Comments
+    categoryId: ""
